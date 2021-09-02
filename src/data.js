@@ -19,6 +19,7 @@ import fantaPineAppleImg from './assets/img/Fanta-Pineapple-282x700.png';
 import cokeEnergyImg from './assets/img/coca-cola-energy-282x130.png';
 import cokeEnergyZeroImg from './assets/img/coca-cola-energy-zero-sugar-282x130.png';
 import cokeCoffeeImg from './assets/img/coca-cola-with-coffee-espresso-282x700.png';
+import {COLORS} from './constant';
 
 export const COCO_COLA = [
   {
@@ -27,6 +28,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.primary,
   },
   {
     name: 'light',
@@ -34,6 +36,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.primary,
   },
   {
     name: 'zero',
@@ -41,6 +44,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.primary,
   },
   {
     name: 'sprite',
@@ -48,6 +52,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.sprite,
   },
   {
     name: 'fanta zero',
@@ -55,6 +60,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.fanta,
   },
   {
     name: 'energy',
@@ -62,6 +68,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.primary,
   },
   {
     name: 'energy zero',
@@ -69,6 +76,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.primary,
   },
   {
     name: 'coffee',
@@ -76,6 +84,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.primary,
   },
   {
     name: 'diet',
@@ -83,6 +92,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.diet,
   },
   {
     name: 'zero',
@@ -90,6 +100,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.primary,
   },
   {
     name: 'zero orange vanilla',
@@ -97,6 +108,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.orange,
   },
   {
     name: 'vanilla',
@@ -104,6 +116,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.vanilla,
   },
   {
     name: 'orange vanilla',
@@ -111,6 +124,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.orange,
   },
   {
     name: 'life',
@@ -118,6 +132,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.life,
   },
   {
     name: 'cherry',
@@ -125,6 +140,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.cherry,
   },
   {
     name: 'zero',
@@ -132,6 +148,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.white,
   },
   {
     name: 'cranberry',
@@ -139,6 +156,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.cranberry,
   },
   {
     name: 'grape',
@@ -146,6 +164,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.fantaGrape,
   },
   {
     name: 'orange',
@@ -153,6 +172,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.orange,
   },
   {
     name: 'pineapple',
@@ -160,5 +180,6 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
+    color: COLORS.fantaPineApple,
   },
 ];

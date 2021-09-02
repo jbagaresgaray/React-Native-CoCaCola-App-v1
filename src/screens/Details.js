@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     position: 'relative',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    // height: 456,
+    minHeight: 384,
     flex: 1,
   },
   DetailsContainer: {
@@ -191,13 +191,15 @@ const styles = StyleSheet.create({
     paddingVertical: 25,
   },
   posterImage: {
-    height: 384,
+    height: 314,
+    // marginTop: 25,
+    // backgroundColor: 'blue',
     // width: '100%',
 
-    // zIndex: 1,
-    // position: 'absolute',
-    // top: 0,
-    // right: 0,
+    zIndex: 1,
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
   },
   path3ImgContainer: {
     position: 'absolute',
