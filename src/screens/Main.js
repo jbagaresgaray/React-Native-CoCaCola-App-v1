@@ -71,9 +71,9 @@ const MainScreen = () => {
             resizeMode="contain"
             style={styles.posterImage}
           />
-          <View style={styles.ButtonView}>
+          {/* <View style={styles.ButtonView}>
             <Button label="Add" />
-          </View>
+          </View> */}
         </Animated.View>
       </TouchableOpacity>
     );
