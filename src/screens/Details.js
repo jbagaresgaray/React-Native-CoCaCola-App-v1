@@ -24,6 +24,7 @@ const Details = () => {
   const navigation = useNavigation();
   const route = useRoute();
   const [item, setItem] = useState(null);
+  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     const params = route.params;
@@ -112,7 +113,7 @@ const Details = () => {
         )}
       </ScrollView>
       <View style={styles.Footer}>
-        <Stepper />
+        <Stepper value={quantity} />
         <Button label="Add" />
       </View>
     </View>
