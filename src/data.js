@@ -36,7 +36,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
-    color: COLORS.primary,
+    color: COLORS.diet,
   },
   {
     name: 'zero',
@@ -44,7 +44,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
-    color: COLORS.primary,
+    color: COLORS.zero,
   },
   {
     name: 'sprite',
@@ -68,7 +68,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
-    color: COLORS.primary,
+    color: COLORS.energy,
   },
   {
     name: 'energy zero',
@@ -76,7 +76,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
-    color: COLORS.primary,
+    color: COLORS.energyZero,
   },
   {
     name: 'coffee',
@@ -84,7 +84,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
-    color: COLORS.primary,
+    color: COLORS.energyCoffee,
   },
   {
     name: 'diet',
@@ -100,7 +100,7 @@ export const COCO_COLA = [
     year: '1996',
     price: 3,
     size: '8 fl oz',
-    color: COLORS.primary,
+    color: COLORS.zero,
   },
   {
     name: 'zero orange vanilla',

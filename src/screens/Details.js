@@ -1,5 +1,6 @@
 import {useNavigation, useRoute} from '@react-navigation/core';
 import React, {useEffect, useLayoutEffect, useState} from 'react';
+import * as Animatable from 'react-native-animatable';
 import {
   View,
   StyleSheet,
@@ -73,32 +74,46 @@ const Details = () => {
       <ScrollView contentContainerStyle={styles.ScrollView}>
         {item && (
           <>
-            <View style={styles.Details}>
+            <Animatable.View
+              style={styles.Details}
+              animation="slideInLeft"
+              duration={800}>
               <View>
-                <Text style={styles.DetailsTitle}>{item.name}</Text>
+                <Animatable.Text style={styles.DetailsTitle}>
+                  {item.name}
+                </Animatable.Text>
                 <View style={styles.DetailsContainer}>
-                  <View style={styles.DetailsCaptionView}>
+                  <Animatable.View
+                    style={styles.DetailsCaptionView}
+                    animation="slideInLeft">
                     <Text style={styles.DetailsCaption}>Year</Text>
                     <Text style={styles.DetailsLabel}>{item.year}</Text>
-                  </View>
-                  <View style={styles.DetailsCaptionView}>
+                  </Animatable.View>
+                  <Animatable.View
+                    style={styles.DetailsCaptionView}
+                    animation="slideInLeft">
                     <Text style={styles.DetailsCaption}>Price</Text>
                     <Text style={styles.DetailsLabel}>$ 3.00</Text>
-                  </View>
-                  <View style={styles.DetailsCaptionView}>
+                  </Animatable.View>
+                  <Animatable.View
+                    style={styles.DetailsCaptionView}
+                    animation="slideInLeft">
                     <Text style={styles.DetailsCaption}>Size</Text>
                     <Text style={styles.DetailsLabel}>{item.size}</Text>
-                  </View>
+                  </Animatable.View>
                 </View>
               </View>
 
-              <Image
+              <Animatable.Image
+                animation="zoomIn"
                 source={item.image}
                 resizeMode="contain"
                 style={styles.posterImage}
               />
-            </View>
-            <View style={styles.DetailsTextContainer}>
+            </Animatable.View>
+            <Animatable.View
+              style={styles.DetailsTextContainer}
+              animation="slideInRight">
               <Text style={styles.DetailsText}>
                 Our original, iconic, great tasting drink refreshes millions, at
                 every moment, all around the world. Created in 1886 by
@@ -108,14 +123,14 @@ const Details = () => {
                 And some not-so-everyday moments, too… in 1985, it was the first
                 soft drink in space.
               </Text>
-            </View>
+            </Animatable.View>
           </>
         )}
       </ScrollView>
-      <View style={styles.Footer}>
+      <Animatable.View style={styles.Footer} animation="slideInUp">
         <Stepper value={quantity} />
         <Button label="Add" />
-      </View>
+      </Animatable.View>
     </View>
   );
 };

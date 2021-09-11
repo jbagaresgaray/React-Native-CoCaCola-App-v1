@@ -1,9 +1,8 @@
-import React, {useRef, useLayoutEffect, useState, useCallback} from 'react';
+import React, {useRef, useLayoutEffect, useState} from 'react';
 import {
   Animated,
   Dimensions,
   Image,
-  Platform,
   StatusBar,
   StyleSheet,
   View,
@@ -11,6 +10,7 @@ import {
   Text,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import * as Animatable from 'react-native-animatable';
 
 import {COLORS, FONT_FAMILY} from '../constant';
 import {COCO_COLA} from '../data';
@@ -20,7 +20,7 @@ import Path4Img from '../assets/svg/path4.svg';
 import CartSVG from '../assets/svg/cart.svg';
 import MenuSVG from '../assets/svg/menu.svg';
 import SliderSVG from '../assets/svg/slider.svg';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 
 const {width, height} = Dimensions.get('window');
 
@@ -59,7 +59,9 @@ const MainScreen = () => {
   const onViewableItemsChanged = ({viewableItems}) => {
     if (viewableItems) {
       const item = viewableItems[0];
-      setIndex(item.index);
+      if (item) {
+        setIndex(item.index);
+      }
     }
   };
   const viewabilityConfigCallbackPairs = useRef([
@@ -67,6 +69,14 @@ const MainScreen = () => {
   ]);
 
   const renderItem = ({item, index}) => {
+    const inputRange = [
+      (index - 1) * width,
+      index * width,
+      (index + 1) * width,
+    ];
+    const outputRange = ['90deg', '0deg', '-90deg'];
+    const translateX = scrollX.interpolate({inputRange, outputRange});
+
     return (
       <TouchableOpacity
         key={index}
@@ -77,18 +87,20 @@ const MainScreen = () => {
             item,
           });
         }}>
-        <Animated.View
+        <Animatable.View
+          animation="slideInUp"
+          duration={800}
           removeClippedSubviews={false}
           style={styles.FlatListItem}>
-          <Image
+          <Animated.Image
             source={item.image}
             resizeMode="contain"
-            style={styles.posterImage}
+            style={[styles.posterImage, {transform: [{rotateZ: translateX}]}]}
           />
           {/* <View style={styles.ButtonView}>
             <Button label="Add" />
           </View> */}
-        </Animated.View>
+        </Animatable.View>
       </TouchableOpacity>
     );
   };
@@ -106,11 +118,14 @@ const MainScreen = () => {
       <View style={styles.path3ImgContainer}>
         <Path3Img />
       </View>
-      <View style={styles.textStyleView}>
+      <Animatable.View
+        style={styles.textStyleView}
+        animation="slideInDown"
+        duration={800}>
         <Text style={styles.textStyle} numberOfLines={1}>
           {COCO_COLA[getIndex].name}
         </Text>
-      </View>
+      </Animatable.View>
       <Animated.FlatList
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -122,7 +137,7 @@ const MainScreen = () => {
         snapToAlignment="start"
         onScroll={Animated.event(
           [{nativeEvent: {contentOffset: {x: scrollX}}}],
-          {useNativeDriver: false},
+          {useNativeDriver: true},
         )}
         scrollEventThrottle={16}
         data={COCO_COLA}

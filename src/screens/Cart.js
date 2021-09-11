@@ -66,7 +66,7 @@ const CartScreen = () => {
         <Path3Img />
       </View>
       <FlatList
-        style={styles.FlatList}
+        contentContainerStyle={styles.FlatList}
         data={COCO_COLA}
         renderItem={renderItem}
         keyExtractor={(item, index) => index + '-key'}
@@ -126,8 +126,8 @@ const styles = StyleSheet.create({
     top: -289,
   },
   FlatList: {
-    paddingTop: 50,
-    flex: 1,
+    // flex: 1,
+    paddingVertical: 50,
   },
   cartItem: {
     flexDirection: 'row',
@@ -152,6 +152,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 30,
     marginVertical: 20,
+    backgroundColor: 'transparent',
   },
   textTotal: {
     fontSize: 24,

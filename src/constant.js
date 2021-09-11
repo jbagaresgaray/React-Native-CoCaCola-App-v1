@@ -11,6 +11,10 @@ export const COLORS = {
   fantaGrape: '#a63aae',
   fantaPineApple: '#ffb120',
   white: '#fff',
+  zero: '#5E071A',
+  energy: '#750E25',
+  energyZero: '#35141B',
+  energyCoffee: '#901B2B',
 };
 
 export const FONT_FAMILY = {
