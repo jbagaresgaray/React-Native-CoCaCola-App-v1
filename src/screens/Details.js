@@ -1,6 +1,7 @@
 import {useNavigation, useRoute} from '@react-navigation/core';
 import React, {useEffect, useLayoutEffect, useState} from 'react';
 import * as Animatable from 'react-native-animatable';
+import {SharedElement} from 'react-navigation-shared-element';
 import {
   View,
   StyleSheet,
@@ -9,6 +10,7 @@ import {
   ScrollView,
   Text,
   Image,
+  Platform,
 } from 'react-native';
 import {COLORS, FONT_FAMILY} from '../constant';
 import Button from '../components/Button';
@@ -29,10 +31,7 @@ const Details = () => {
 
   useEffect(() => {
     const params = route.params;
-    console.log('params: ', params);
-
     const data = params?.item;
-    console.log('data: ', data);
     setItem(data);
   }, [route]);
 
@@ -142,7 +141,7 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   ScrollView: {
-    paddingTop: 56,
+    paddingTop: Platform.OS === 'android' ? 56 : 86,
     paddingHorizontal: 30,
   },
   headerStyle: {
@@ -238,7 +237,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginHorizontal: 30,
-    marginVertical: 20,
+    marginVertical: Platform.OS === 'android' ? 20 : 30,
   },
 });
 

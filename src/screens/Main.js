@@ -8,9 +8,11 @@ import {
   View,
   TouchableOpacity,
   Text,
+  Platform,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import * as Animatable from 'react-native-animatable';
+import {SharedElement} from 'react-navigation-shared-element';
 
 import {COLORS, FONT_FAMILY} from '../constant';
 import {COCO_COLA} from '../data';
@@ -87,20 +89,22 @@ const MainScreen = () => {
             item,
           });
         }}>
-        <Animatable.View
-          animation="slideInUp"
-          duration={800}
-          removeClippedSubviews={false}
-          style={styles.FlatListItem}>
-          <Animated.Image
-            source={item.image}
-            resizeMode="contain"
-            style={[styles.posterImage, {transform: [{rotateZ: translateX}]}]}
-          />
-          {/* <View style={styles.ButtonView}>
+        <SharedElement id={`item.${item.id}.photo`}>
+          <Animatable.View
+            animation="slideInUp"
+            duration={800}
+            removeClippedSubviews={false}
+            style={styles.FlatListItem}>
+            <Animated.Image
+              source={item.image}
+              resizeMode="contain"
+              style={[styles.posterImage, {transform: [{rotateZ: translateX}]}]}
+            />
+            {/* <View style={styles.ButtonView}>
             <Button label="Add" />
           </View> */}
-        </Animatable.View>
+          </Animatable.View>
+        </SharedElement>
       </TouchableOpacity>
     );
   };
@@ -193,7 +197,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: 0,
     right: 0,
-    top: 56,
+    top: Platform.OS === 'android' ? 56 : 86,
   },
   textStyle: {
     fontSize: 49,

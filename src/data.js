@@ -23,6 +23,7 @@ import {COLORS} from './constant';
 
 export const COCO_COLA = [
   {
+    id: 1,
     name: 'classic',
     image: classicCokeImg,
     year: '1996',
@@ -31,6 +32,7 @@ export const COCO_COLA = [
     color: COLORS.primary,
   },
   {
+    id: 2,
     name: 'light',
     image: lightCokeImg,
     year: '1996',
@@ -39,6 +41,7 @@ export const COCO_COLA = [
     color: COLORS.diet,
   },
   {
+    id: 3,
     name: 'zero',
     image: zeroCokeImg,
     year: '1996',
@@ -47,6 +50,7 @@ export const COCO_COLA = [
     color: COLORS.zero,
   },
   {
+    id: 4,
     name: 'sprite',
     image: spriteImg,
     year: '1996',
@@ -55,6 +59,7 @@ export const COCO_COLA = [
     color: COLORS.sprite,
   },
   {
+    id: 5,
     name: 'fanta zero',
     image: fantaImg,
     year: '1996',
@@ -63,6 +68,7 @@ export const COCO_COLA = [
     color: COLORS.fanta,
   },
   {
+    id: 6,
     name: 'energy',
     image: cokeEnergyImg,
     year: '1996',
@@ -71,6 +77,7 @@ export const COCO_COLA = [
     color: COLORS.energy,
   },
   {
+    id: 7,
     name: 'energy zero',
     image: cokeEnergyZeroImg,
     year: '1996',
@@ -79,6 +86,7 @@ export const COCO_COLA = [
     color: COLORS.energyZero,
   },
   {
+    id: 8,
     name: 'coffee',
     image: cokeCoffeeImg,
     year: '1996',
@@ -87,6 +95,7 @@ export const COCO_COLA = [
     color: COLORS.energyCoffee,
   },
   {
+    id: 9,
     name: 'diet',
     image: dietCokeImg,
     year: '1996',
@@ -95,6 +104,7 @@ export const COCO_COLA = [
     color: COLORS.diet,
   },
   {
+    id: 10,
     name: 'zero',
     image: zeroCoke1Img,
     year: '1996',
@@ -103,6 +113,7 @@ export const COCO_COLA = [
     color: COLORS.zero,
   },
   {
+    id: 11,
     name: 'zero orange vanilla',
     image: zeroOrangeCokeImg,
     year: '1996',
@@ -111,6 +122,7 @@ export const COCO_COLA = [
     color: COLORS.orange,
   },
   {
+    id: 12,
     name: 'vanilla',
     image: vanillaCokeImg,
     year: '1996',
@@ -119,6 +131,7 @@ export const COCO_COLA = [
     color: COLORS.vanilla,
   },
   {
+    id: 13,
     name: 'orange vanilla',
     image: orangeVanillaImg,
     year: '1996',
@@ -127,6 +140,7 @@ export const COCO_COLA = [
     color: COLORS.orange,
   },
   {
+    id: 14,
     name: 'life',
     image: lifeCokeImg,
     year: '1996',
@@ -135,6 +149,7 @@ export const COCO_COLA = [
     color: COLORS.life,
   },
   {
+    id: 15,
     name: 'cherry',
     image: cherryCokeImg,
     year: '1996',
@@ -143,6 +158,7 @@ export const COCO_COLA = [
     color: COLORS.cherry,
   },
   {
+    id: 16,
     name: 'zero',
     image: spriteZeroImg,
     year: '1996',
@@ -151,6 +167,7 @@ export const COCO_COLA = [
     color: COLORS.white,
   },
   {
+    id: 17,
     name: 'cranberry',
     image: spriteCherryImg,
     year: '1996',
@@ -159,6 +176,7 @@ export const COCO_COLA = [
     color: COLORS.cranberry,
   },
   {
+    id: 18,
     name: 'grape',
     image: fantaGrapeImg,
     year: '1996',
@@ -167,6 +185,7 @@ export const COCO_COLA = [
     color: COLORS.fantaGrape,
   },
   {
+    id: 19,
     name: 'orange',
     image: fantaOrangeImg,
     year: '1996',
@@ -175,6 +194,7 @@ export const COCO_COLA = [
     color: COLORS.orange,
   },
   {
+    id: 20,
     name: 'pineapple',
     image: fantaPineAppleImg,
     year: '1996',
