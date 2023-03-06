@@ -13,8 +13,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		31BFB2A5392736C365902DA3 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3158E7D58B7B7B7CF0401A2 /* ExpoModulesProvider.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8DC8F6DB318945F7A2EB08DE /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09FF29B2E12A4FB199FEE1FE /* Gilroy-Light.otf */; };
+		AA1A90D9499D00072458F6A5 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60431D5AA36E1E6AAC153E73 /* ExpoModulesProvider.swift */; };
 		E3D73DF6D830BAE48202B243 /* libPods-React_Native_CoCaCola_App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98275FA8894E6092D0358A5C /* libPods-React_Native_CoCaCola_App.a */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +42,12 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = React_Native_CoCaCola_App/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = React_Native_CoCaCola_App/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = React_Native_CoCaCola_App/main.m; sourceTree = "<group>"; };
+		60431D5AA36E1E6AAC153E73 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = React_Native_CoCaCola_App/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7CEB5C5EDE178B7C90ED13 /* libPods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98275FA8894E6092D0358A5C /* libPods-React_Native_CoCaCola_App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-React_Native_CoCaCola_App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46B1AB16A0541DC061424BC /* Pods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests/Pods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3158E7D58B7B7B7CF0401A2 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-React_Native_CoCaCola_App/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		C42CC838213F4C56957155DA /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Gilroy-ExtraBold.otf"; path = "../src/assets/fonts/Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
 		E9C633D542244448BAE02241 /* Pods-React_Native_CoCaCola_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Native_CoCaCola_App.release.xcconfig"; path = "Target Support Files/Pods-React_Native_CoCaCola_App/Pods-React_Native_CoCaCola_App.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -100,6 +104,14 @@
 			name = React_Native_CoCaCola_App;
 			sourceTree = "<group>";
 		};
+		1EA6ABB90337F219774F6EC4 /* React_Native_CoCaCola_App */ = {
+			isa = PBXGroup;
+			children = (
+				B3158E7D58B7B7B7CF0401A2 /* ExpoModulesProvider.swift */,
+			);
+			name = React_Native_CoCaCola_App;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,14 @@
 				8E7CEB5C5EDE178B7C90ED13 /* libPods-React_Native_CoCaCola_App-React_Native_CoCaCola_AppTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33440D1C1A42672F84B73F9C /* React_Native_CoCaCola_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				60431D5AA36E1E6AAC153E73 /* ExpoModulesProvider.swift */,
+			);
+			name = React_Native_CoCaCola_AppTests;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -127,6 +147,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D107043B876548128C1C9DD0 /* Resources */,
 				F928E4B80C822D9AAF2E720C /* Pods */,
+				B022D037775FFA365CE0E0BD /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -140,6 +161,15 @@
 				00E356EE1AD99517003FC87E /* React_Native_CoCaCola_AppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B022D037775FFA365CE0E0BD /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				1EA6ABB90337F219774F6EC4 /* React_Native_CoCaCola_App */,
+				33440D1C1A42672F84B73F9C /* React_Native_CoCaCola_AppTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		D107043B876548128C1C9DD0 /* Resources */ = {
@@ -421,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* React_Native_CoCaCola_AppTests.m in Sources */,
+				AA1A90D9499D00072458F6A5 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +461,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				31BFB2A5392736C365902DA3 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +486,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = React_Native_CoCaCola_AppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +510,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = React_Native_CoCaCola_AppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,7 +626,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -652,7 +684,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
