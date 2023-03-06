@@ -2,6 +2,10 @@
   "name": "React_Native_CoCaCola_App",
   "expo": {
     "name": "React_Native_CoCaCola_App",
-    "slug": "cocacola_app"
+    "slug": "cocacola_app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
