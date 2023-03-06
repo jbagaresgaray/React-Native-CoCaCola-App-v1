@@ -269,7 +269,7 @@ PODS:
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
   - React-jsinspector (0.64.2)
-  - react-native-safe-area-context (3.3.1):
+  - react-native-safe-area-context (3.3.2):
     - React-Core
   - React-perflogger (0.64.2)
   - React-RCTActionSheet (0.64.2):
@@ -337,9 +337,9 @@ PODS:
     - React-perflogger (= 0.64.2)
   - RNCMaskedView (0.1.11):
     - React
-  - RNGestureHandler (1.10.3):
+  - RNGestureHandler (2.1.3):
     - React-Core
-  - RNReanimated (2.2.0):
+  - RNReanimated (2.3.3):
     - DoubleConversion
     - FBLazyVector
     - FBReactNativeSpec
@@ -365,14 +365,13 @@ PODS:
     - React-RCTNetwork
     - React-RCTSettings
     - React-RCTText
-    - React-RCTVibration
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.6.0):
+  - RNScreens (3.10.2):
     - React-Core
     - React-RCTImage
-  - RNSharedElement (0.8.2):
-    - React
+  - RNSharedElement (0.8.3):
+    - React-Core
   - RNSVG (12.1.1):
     - React
   - Yoga (1.14.0)
@@ -583,7 +582,7 @@ SPEC CHECKSUMS:
   React-jsi: 67747b9722f6dab2ffe15b011bcf6b3f2c3f1427
   React-jsiexecutor: 80c46bd381fd06e418e0d4f53672dc1d1945c4c3
   React-jsinspector: cc614ec18a9ca96fd275100c16d74d62ee11f0ae
-  react-native-safe-area-context: ca9f3b49266e56b1d841ccdde7cfe2e076f529b6
+  react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
   React-perflogger: 25373e382fed75ce768a443822f07098a15ab737
   React-RCTActionSheet: af7796ba49ffe4ca92e7277a5d992d37203f7da5
   React-RCTAnimation: 6a2e76ab50c6f25b428d81b76a5a45351c4d77aa
@@ -597,10 +596,10 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
-  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
-  RNReanimated: 9c13c86454bfd54dab7505c1a054470bfecd2563
-  RNScreens: eb0dfb2d6b21d2d7f980ad46b14eb306d2f1062e
-  RNSharedElement: 87baf6d04da5b068f000dd8c953d28a1196999c0
+  RNGestureHandler: e1099204721a17a89c81fcd1cc2e92143dc040fb
+  RNReanimated: 0e5ef4a7e4e79f84efbe5b40771c31044c51e7d0
+  RNScreens: d6da2b9e29cf523832c2542f47bf1287318b1868
+  RNSharedElement: 381b5e33366513cc3f449f2dc3a42c5df0f54021
   RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a

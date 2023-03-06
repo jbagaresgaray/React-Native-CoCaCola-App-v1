@@ -1,4 +1,7 @@
 {
   "name": "React_Native_CoCaCola_App",
-  "displayName": "React_Native_CoCaCola_App"
+  "expo": {
+    "name": "React_Native_CoCaCola_App",
+    "slug": "cocacola_app"
+  }
 }
